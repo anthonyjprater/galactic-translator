@@ -1,0 +1,5 @@
+# SEO
+Having your website or application optimized for search engines is a must have in any industry where your business is advertised, queried on search engines or your customers need to contact you. Luckily for us all, there are some really bright people staying on the edge of SEO that can help us with the marketing aspect of development. It does pay to follow some best practices along the way to make your applications more visible and attractive to potential users.
+<br>
+Making sure you produce high quality content that your users can rely on is probably the highest best practice on my list. Being optimized for mobile interaction is also a strategy we dare not forget this day and age. Analytics and SEO audits are also key in staying optimized to the ever changing algorithms of popular search engines.
+<br>

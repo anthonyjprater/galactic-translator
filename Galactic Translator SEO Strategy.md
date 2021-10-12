@@ -1,0 +1,2 @@
+# Galactic Translator SEO Strategy
+The app can benefit from more information related to the langauges we are trying to get the application to translate. More UI/UX related content ie. image searches, and also social media links for pages or posts related to the application.

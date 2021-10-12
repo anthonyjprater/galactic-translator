@@ -13,6 +13,16 @@ import Footer from "@/components/Footer.vue";
 
 
 export default {
+  head: {
+    title: 'Galactic Translator App',
+    meta: [
+      {
+        hid: 'description',
+        name: 'description',
+        content: 'Home page description'
+      }
+    ],
+  },
   name: 'TranslatorApp',
   props: {
     msg: String

@@ -12,6 +12,16 @@ import Header from "@/components/Header.vue";
 import Footer from "@/components/Footer.vue";
 
 export default {
+  head: {
+    title: 'Philology of Galactic Langauges',
+    meta: [
+      {
+        hid: 'description',
+        name: 'description',
+        content: 'Home page description'
+      }
+    ],
+  },
   name: 'Philology',
   props: {
     msg: String

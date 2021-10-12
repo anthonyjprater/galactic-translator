@@ -13,6 +13,16 @@ import Footer from "@/components/Footer.vue";
 
 
 export default {
+  head: {
+    title: 'Views from the Galaxy',
+    meta: [
+      {
+        hid: 'description',
+        name: 'description',
+        content: 'Home page description'
+      }
+    ],
+  },
   name: 'Gallery',
   props: {
     msg: String
