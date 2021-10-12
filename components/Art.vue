@@ -28,7 +28,7 @@ export default {
       required: true
     },
     title: {
-      type: String,
+      type: null,
       required: true
     }
   },

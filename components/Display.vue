@@ -5,7 +5,7 @@
   </h1>
   <!-- image gallery composed of images fetched by unsplash.com and iterated through with a v-for loop bound by the index key -->
   <div id="galleryWrapper" class="wrapper_gallery b-row align-content-around rounded pt-3">
-    <div class="figure__wrapper" v-for="item in items" :key="item">
+    <div class="figure__wrapper" v-for="(item, index) in items" :key="index">
       <!-- each item uses json data received to provide links to the image, source, alt description, and users name and profile link  -->
       <figure class="figure" @click="myFigure">
         <Art :src="item.urls.regular" :alt="item.alt_description" :title="item.description" />

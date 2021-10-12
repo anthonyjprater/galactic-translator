@@ -19,7 +19,7 @@
               <div id="userInput" class="bubble">
                 <textarea v-model.lazy="input" debounce="500" name="ytext" id="ytext" cols="40" rows="12" class="form" placeholder="Please type your text here so C-3P0 can translate it ... for you..."></textarea>
               </div>
-              <span id="outPut" class="bubble">{{ translation }}</span>
+              <span id="outPut" class="bubble text-output">{{ translation }}</span>
               <button id="translateButton" type="submit" name="translate" class="hidden btn btn-outline-light my-2 form__button" @click.prevent="getTranslation()">{{ translationbutton }}</button>
             </form>
             <button id="newTranslation" class="btn btn-outline-light my-2 form__button" @click="freshStart()">{{ newtranslationbutton }}</button>
@@ -89,8 +89,10 @@ export default {
 .translator__heading {
     font-family: 'Moonhouse';
 }
-#output {
+.text-output {
   color: #fff;
+  width: 5rem;
+  border: 2px solid white;
 }
 .translator__form {
     display: flex;
