@@ -20,7 +20,7 @@
                 <textarea v-model.lazy="input" debounce="500" name="ytext" id="ytext" cols="40" rows="12" class="form" placeholder="Please type your text here so C-3P0 can translate it ... for you..."></textarea>
               </div>
               <span id="outPut" class="bubble text-output">{{ translation }}</span>
-              <button id="translateButton" type="submit" name="translate" class="hidden btn btn-outline-light my-2 form__button" @click.prevent="getTranslation()">{{ translationbutton }}</button>
+              <button id="translateButton" type="button" name="translate" class="hidden btn btn-outline-light my-2 form__button" @click.prevent="getTranslation()">{{ translationbutton }}</button>
             </form>
             <button id="newTranslation" class="btn btn-outline-light my-2 form__button" @click="freshStart()">{{ newtranslationbutton }}</button>
           </article>
@@ -62,7 +62,8 @@ export default {
       fetch(this.echo)
         .then(async (response) => {
         const data = await response.json();
-        const translation = data.contents.translated
+        let translation = data.contents.translated
+        console.log(translation)
       }
         )},
     freshStart() {
@@ -70,9 +71,9 @@ export default {
       console.log(this.input);
     }
   },
-  mounted() {
-    this.getTranslation()   
-  }
+  // mounted() {
+  //   this.getTranslation()   
+  // }
 }
 </script>
 

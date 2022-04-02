@@ -24,7 +24,7 @@ export default {
       required: true
     },
     alt: {
-      type: String,
+      type: null,
       required: true
     },
     title: {
