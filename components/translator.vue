@@ -57,15 +57,21 @@ export default {
   },
   methods: {
     getTranslation() {
-      this.echo = this.yodaSpeak + this.input;
-      console.log(this.echo);
-      fetch(this.echo)
-        .then(async (response) => {
-        const data = await response.json();
-        let translation = data.contents.translated
-        console.log(translation)
-      }
-        )},
+      // this.echo = this.yodaSpeak + this.input;
+      // console.log(this.echo);
+      // fetch(this.echo)
+      //   .then(async (response) => {
+      //   const data = await response.json();
+      //   let translation = data.contents.translated
+      //   console.log(translation)
+      // }
+      //   )
+      fetch(this.yodaSpeak + this.input)
+    .then(response => response.json())
+    .then(data => {
+      this.translation = data.contents.translated
+      console.log(data.contents.translated)} );
+        },
     freshStart() {
       this.input = "",
       console.log(this.input);
